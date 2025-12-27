@@ -121,3 +121,7 @@ This project exists because of your time, effort, and curiosity.
 - **Name:** Yuvaraj Ragothaman
 - **GitHub:** https://github.com/LevelSilence
 - **About:** Sophomore @IIITA
+
+- **Name:** Yash Singh
+- **GitHub:** https://github.com/yash-singh12
+- **About:**  I am a backend focused full stack developer with a strong interest in building modern, user-friendly web applications. 
