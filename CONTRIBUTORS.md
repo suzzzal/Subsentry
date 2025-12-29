@@ -163,3 +163,11 @@ This project exists because of your time, effort, and curiosity.
 - **Name:** Soham Agarwal
 - **GitHub:** https://github.com/SohamSDA
 - **About:** IT sophomore at IIIT Vadodara with a strong understanding of full-stack development. Passionate about learning through hands-on open-source contributions and collaborating on real-world projects.
+
+- **Name:** Mohan
+- **GitHub:** https://github.com/aricthecoder
+- **About:** IT Sophomore at IIIT Allahabad
+
+- **Name:** Amogh S.
+- **GitHub:** https://github.com/MogaS811
+- **About:** Cricket is love and AI ML bhi bdiya lgta hai. [From IIITA]
