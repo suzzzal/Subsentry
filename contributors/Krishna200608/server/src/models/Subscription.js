@@ -2,6 +2,8 @@ import mongoose from "mongoose";
 import {
   BILLING_CYCLES,
   SUBSCRIPTION_SOURCES,
+  SUBSCRIPTION_STATUS,
+  SUBSCRIPTION_CATEGORIES,
   DEFAULT_CURRENCY,
 } from "../constants/subscription.constants.js";
 
@@ -39,6 +41,14 @@ const subscriptionSchema = new mongoose.Schema(
       lowercase: true,
     },
 
+    // Category
+    category: {
+      type: String,
+      enum: Object.values(SUBSCRIPTION_CATEGORIES),
+      default: SUBSCRIPTION_CATEGORIES.OTHER,
+      lowercase: true,
+    },
+
     // Renewal tracking
     renewalDate: {
       type: Date,
@@ -54,17 +64,20 @@ const subscriptionSchema = new mongoose.Schema(
       type: Date,
     },
 
-    // Source of subscription data
+    // Source
     source: {
       type: String,
+      enum: Object.values(SUBSCRIPTION_SOURCES),
       default: SUBSCRIPTION_SOURCES.MANUAL,
       lowercase: true,
     },
 
     // Status
-    isActive: {
-      type: Boolean,
-      default: true,
+    status: {
+      type: String,
+      enum: Object.values(SUBSCRIPTION_STATUS),
+      default: SUBSCRIPTION_STATUS.ACTIVE,
+      lowercase: true,
     },
   },
   {
