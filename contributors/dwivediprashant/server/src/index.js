@@ -12,7 +12,6 @@ connectDB();
 //middleware
 app.use(express.json());
 
-
 //routes------------------------
 //--subscription routes :----------
 app.use("/api/subscriptions", subscriptionRoutes);

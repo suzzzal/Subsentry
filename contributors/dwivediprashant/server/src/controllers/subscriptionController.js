@@ -1,17 +1,11 @@
 const Subscription = require('../models/Subscription');
-
+const {generateUserId} = require('../utils/userIdGenerate');
 ///////////-1)--create subscription---///////////
 
 const createSubscription = async (req, res) => {
   try {
-    const {userId, name, amount, billingCycle, renewalDate, isTrial, source } = req.body;
-
-    if (!userId) {
-      return res.status(401).json({
-        success: false,
-        message: 'User authentication required'
-      });
-    }
+    const {name, amount, billingCycle, renewalDate, isTrial, source } = req.body;
+    const userId = generateUserId();
     if (!name || !amount || !billingCycle || !renewalDate) {
       return res.status(400).json({
         success: false,

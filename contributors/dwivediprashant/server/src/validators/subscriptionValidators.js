@@ -1,9 +1,7 @@
 const Joi = require('joi');
 
 const createSubscriptionSchema = Joi.object({
-  userId: Joi.string()
-    .trim()
-    .required(),
+  userId: Joi.string(),
 
   name: Joi.string()
     .trim()
